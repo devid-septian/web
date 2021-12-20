@@ -1,0 +1,328 @@
+{% set page_id = "Index" %}
+{% extends "layout.html" %}
+	{% block content %}
+	<!--https://pxltheme.com/html/bolby/demo/index-3.html-->
+	<div class="home" id="home">
+		<section class="jumbotron jumbotron-fluid d-flex align-items-center">
+		  <div class="hero-content text-center d-block">
+				<div class="pict-wrap">
+					<img src="./dist/images/pict.png" alt="about" class="img-fluid">
+				</div>
+				<h1>Devid Septian</h1>
+				<p>UI Engineer</p>
+				<ul class="social-icons light list-inline mb-3 mt-3">
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/devid-septian-9a08ab102/"><i class="icon-linkedin"></i></a></li>
+					<li class="list-inline-item"><a href="https://twitter.com/devid_septian87"><i class="icon-twitter"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.instagram.com/devidseptian87/"><i class="icon-instagram"></i></a></li>
+				</ul>
+				<a href="mailto:devidseptian87@gmail.com" class="btn btn-primary rounded">Hire Me</a>
+			</div>
+			<div class="circle pos-1 rellax" data-rellax-speed="-5"></div>
+			<div class="circle md pos-2 rellax" data-rellax-speed="-5"></div>
+			<div class="circle lg pos-3 rellax" data-rellax-speed="-7"></div>
+			<div class="circle pos-4 rellax" data-rellax-speed="-4"></div>
+			<div class="circle md pos-5 rellax" data-rellax-speed="-4"></div>
+			<div class="circle lg pos-6 rellax" data-rellax-speed="-7"></div>
+		</section>
+		<section class="section" id="about">
+			<div class="container">
+					<div class="title">
+						<h2>About Me</h2>
+					</div>
+					<div class="about-wrapp">
+					<div class="row">
+						<div class="col-md-6 align-self-center">
+							{% include "components/svg-dev.html" %}
+						</div>
+						<div class="col-md-6">
+							<div class="about-desc">
+								<p>Hi, I'm a UI/UX Engineer who focuses on writing clean, elegant and efficient code, with 5+ years of professional experience, based in Yogyakarta, Indonesia.</p>
+								<p class="mb-4">I can work in a Team, taking advantage of my development knowledge I can find the best way to make a layout reliable and consistent.</p>
+								<h3 class="mt-0">My Job Description</h3>
+								<ul class="list-unstyled list-icon mb-0">
+									<li><i class="icon-check"></i>Convert mockup design PSD / XD / Sketch into web page (HTML / CSS / JS)</li>
+									<li><i class="icon-check"></i>Layout bug fixing</li>
+									<li><i class="icon-check"></i>Create Mobile web / responsive web</li>
+									<li><i class="icon-check"></i>Create email template</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+		</section>
+		<section class="section" id="experience">
+			<div class="container">
+				<div class="title">
+						<h2>Experience</h2>
+				</div>
+				<div class="row">
+
+					<div class="col-md-4">
+						<!-- service box -->
+						<div class="service-box rounded text-center shadow-blue" data-color="#6C6CE5" style="background-color: rgb(108, 108, 229);">
+							<img src="./dist/images/scholarship.svg" alt="UI/UX design">
+							<h3 class="mb-3 mt-3">STMIK Akakom Yogyakarta</h3>
+							<p class="mb-0">2006 - 2011</p>
+						</div>
+						<div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+					</div>
+
+					<div class="col-md-4">
+						<!-- service box -->
+						<div class="service-box rounded text-center shadow-yellow" data-color="#F9D74C" style="background-color: rgb(249, 215, 76);">
+							<img src="./dist/images/school.svg" alt="UI/UX design">
+							<h3 class="mb-3 mt-3">SMA YKPP Pendopo</h3>
+							<p class="mb-0">2002 - 2004</p>
+						</div>
+						<div class="spacer d-md-none d-lg-none" data-height="30" style="height: 30px;"></div>
+					</div>
+
+					<div class="col-md-4">
+						<!-- service box -->
+						<div class="service-box rounded text-center shadow-pink" data-color="#F97B8B" style="background-color: rgb(249, 123, 139);">
+							<img src="./dist/images/abc.svg" alt="UI/UX design">
+							<h3 class="mb-3 mt-3">SMPN Pendopo</h3>
+							<p class="mb-0">1999 - 2001</p>
+						</div>
+					</div>
+
+				</div>
+				<p class="text-center mt-5">See more my experience on <a href="https://www.linkedin.com/in/devid-septian-9a08ab102/">linkedin</a></p>
+			</div>
+		</section>
+		<section class="section" id="skills">
+			<div class="container">
+				<div class="title">
+					<h2>Skills</h2>
+				</div>
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="box-wrapp">
+							<!-- skill item -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">HTML</h4>
+										<span class="float-right">85%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" data-color="#FFD15C" style="background-color: rgb(255, 209, 92); width: 85%;">
+										</div>
+									</div>
+									<div class="spacer" data-height="26" style="height: 26px;"></div>
+								</div>
+
+								<!-- skill item -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">CSS/SCSS</h4>
+										<span class="float-right">85%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" data-color="#FF4C60" style="background-color: rgb(255, 76, 96); width: 85%;">
+										</div>
+									</div>
+									<div class="spacer" data-height="26" style="height: 26px;"></div>
+								</div>
+
+								<!-- skill item -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">JS/jQuery</h4>
+										<span class="float-right">80%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5" style="background-color: rgb(108, 108, 229); width: 70%;">
+										</div>
+									</div>
+									<div class="spacer" data-height="26" style="height: 26px;"></div>
+								</div>
+
+								<!-- skill item -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">Slicing (Zeplin/PSD/Figma/XD)</h4>
+										<span class="float-right">85%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" data-color="#6C6CE5" style="background-color: rgb(205, 108, 229); width: 85%;">
+										</div>
+									</div>
+									<div class="spacer" data-height="26" style="height: 26px;"></div>
+								</div>
+
+								<!-- skill item -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">Adobe XD</h4>
+										<span class="float-right">80%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5" style="background-color: rgb(108, 229, 201); width: 70%;">
+										</div>
+									</div>
+									<div class="spacer" data-height="26" style="height: 26px;"></div>
+								</div>
+
+								<!-- skill item -->
+								<div class="skill-item">
+									<div class="skill-info clearfix">
+										<h4 class="float-left mb-3 mt-0">Adobe Photoshop</h4>
+										<span class="float-right">80%</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5" style="background-color: rgb(108, 184, 229); width: 70%;">
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="box-wrapp">
+						<div class="list-skill">
+							<h3>Has experience with:</h3>
+							<ul class="list-unstyled list-icon">
+								<li><i class="icon-check"></i>Bootstrap</li>
+								<li><i class="icon-check"></i>Tailwind CSS</li>
+								<li><i class="icon-check"></i>Hubspot</li>
+								<li><i class="icon-check"></i>Wordpress Theme</li>
+								<li><i class="icon-check"></i>UI Design</li>
+								<li><i class="icon-check"></i>UX Design</li>
+							</ul>
+							<h3>And also familiar with:</h3>
+							<p>NPM, Gulp, HandlebarsJs, JSX React, Git, CSS Srpites, Font Icon, Cross Browser, Adobe Photoshop, Adobe XD, Sketch / Zeplin,  Figma, Per Page SEO</p>
+						</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section class="section" id="portfolio">
+			<div class="container">
+				<div class="title mb-0">
+					<h2>Portfolio</h2>
+				</div>
+				<div class="gallery">
+					<div class="gallery-wrapper">
+						<!--<div class="btn-group filter-options">
+							<button class="btn btn--primary active" id='all'>All</button>
+							<button class="btn btn--primary" data-group="logo design">Logo Design</button>
+							<button class="btn btn--primary" data-group="banner design">Banner Design</button>
+							<button class="btn btn--primary" data-group="web design">Web Design</button>
+						</div>-->
+						
+						<div id="grid"class="row my-shuffle-container">
+							<div class="col-4 picture-item" data-groups='["web design"]'>
+								<div class="portfolio-wrapper rounded">
+									<img src="./dist/images/delta-logo.png" alt="portfolio">
+									<div class="caption">
+										<div class="catagory">Figma to HTML</div>
+										<a href="https://angry-brattain-4cf351.netlify.app/" target="blank"></a>
+										<h3>Responsive HTMLlll</h3>
+										<span><i class="icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 picture-item" data-groups='["logo design"]'>
+								<div class="portfolio-wrapper rounded">
+									<img src="./dist/images/doa-bunda.png" alt="portfolio">
+									<div class="caption">
+										<div class="catagory">Design to HTML</div>
+										<a href="https://www.doabundautama.com/" target="_blank"></a>
+										<h3>Landing Page</h3>
+										<span><i class="icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 picture-item" data-groups='["banner design"]'>
+								<div class="portfolio-wrapper rounded">
+									<img src="./dist/images/easybensin.png" alt="portfolio">
+									<div class="caption">
+										<div class="catagory">Design to HTML</div>
+										<a href="https://easybensin.com/en/home" target="blank"></a>
+										<h3>Landing Page</h3>
+										<span><i class="icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 picture-item" data-groups='["web design"]'>
+								<div class="portfolio-wrapper rounded">
+									<img src="./dist/images/aocare.png" alt="portfolio">
+									<div class="caption">
+										<div class="catagory">Design to HTML</div>
+										<a href="https://aocare.org/" target="blank"></a>
+										<h3>Web Company</h3>
+										<span><i class="icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 picture-item" data-groups='["banner design"]'>
+								<div class="portfolio-wrapper rounded">
+									<img src="./dist/images/danonecom.svg" alt="portfolio">
+									<div class="caption">
+										<div class="catagory">Design to HTML</div>
+										<a href="https://www.dancommunity.co.id/" target="blank"></a>
+										<h3>Web Company</h3>
+										<span><i class="icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 picture-item" data-groups='["logo design"]'>
+								<div class="portfolio-wrapper rounded">
+									<img src="./dist/images/bbm.png" alt="portfolio">
+									<div class="caption">
+										<div class="catagory">Design to HTML</div>
+										<a href="https://bbm.kemdikbud.go.id/" target="blank"></a>
+										<h3>Web Company</h3>
+										<span><i class="icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="shuffle_sizer"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--<section class="section bg-blue-dark" id="contact">
+			<div class="icon-img-email rellax" data-rellax-speed="1"><img src="./dist/images/mail-iso.svg" alt="contact" class="img-fluid "></div>
+			<div class="icon-img-paper rellax" data-rellax-speed="1"><img src="./dist/images/paper-plane.svg" alt="contact" class="img-fluid"></div>
+			<div class="container">
+				<div class="title mb-5">
+					<h2 class="text-white">Contact Me</h2>
+				</div>
+				<div class="row justify-content-md-center">
+					<div class="col col-md-6">
+						<div class="contact-wrapper">
+							<p class="text-center">Feel free to fill the form below</p>
+							<div class="form-wrapper">
+								<form>
+									<form>
+										<div class="form-group">
+									    <label for="InputName">Name</label>
+									    <input type="text" class="form-control" id="InputName">
+									  </div>
+									  <div class="form-group">
+									    <label for="InputEmail1">Email</label>
+									    <input type="email" class="form-control" id="InputEmail1">
+									  </div>
+									  <div class="form-group">
+									    <label for="message">Message</label>
+									    <textarea class="form-control" id="message" rows="6"></textarea>
+									  </div>
+									  <button type="submit" class="btn btn-primary ml-auto">Send</button>
+									</form>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>-->
+	</div>
+	{% endblock %}
+	{% block script %}
+	{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c"> -->
+		<title>Devid Septian</title>
+		<link rel="stylesheet" type="text/css" href="./dist/css/icons/style.css">
+		<link rel="stylesheet" type="text/css" href="./dist/css/style.css">
+	</head>
+	<body data-spy="scroll" data-target=".main-menu" data-offset="50">
+		<div class="content-area">
+			<!-- header area -->
+			{% include "header.html" %}
+			{% block content %}{% endblock %}
+			{% include "footer.html" %}
+		</div>
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<!-- popper for bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<!-- popper for bootstrap -->
+		<script src="./dist/js/rellax.min.js"></script>
+		<script src="./dist/js/shuffle.min.js"></script>
+		<script src="./dist/js/jquery.nav.js"></script>
+		<script src="./dist/js/custom.js"></script>
+		{% block script %}{% endblock %}
+	</body>
+</html>

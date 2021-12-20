@@ -1,0 +1,60 @@
+.navbar {
+	background-color: transparent;
+	height: 70px;
+	left: 0;
+	padding: 20px 20px !important;
+	@include transition(linear all 400ms);
+	@media(max-width: 1024px) {
+		height: 60px;
+		padding: 8px 0 !important;
+	}
+	&.fixed-top {
+		position: fixed;
+	}
+	.navbar-brand {
+		font-size: 30px;
+		color: $white;
+		font-weight: 700;
+	}
+	.navbar-collapse {
+		flex-grow: inherit;
+	}
+	.navbar-nav {
+		align-items: center;
+		li {
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				color: $white;
+				font-size: 14px;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			&.current {
+				a {
+					color: $yellow !important;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	.container {
+		@media(max-width: 1024px) {
+			max-width: inherit;
+		}
+	}
+	&.active {
+		background-color: $header-bg;
+		.navbar-nav {
+			li {
+				a {
+					color: $white;
+				}
+			}
+		}
+	}
+}

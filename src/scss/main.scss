@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap');
+$font-poppins-serif: 'Poppins', sans-serif;
+$font-size-base: 16;
+// navbar
+$navbar-padding-y: 32px;
+$navbar-padding-x:	32px;
+// buttons
+$btn-padding-y: 8px;
+$btn-padding-x: 30px;
+$btn-border-radius: 5px;
+$btn-font-weight: 300;
+$btn-font-family: $font-poppins-serif;
+//type
+$headings-font-family: $font-poppins-serif;
+$headings-font-weight: 700;
+$headings-line-height: 64px;
+$headings-color: #000000;
+$theme-colors: (
+  "primary": #FF4C60,
+  "danger": #ff4136
+);
+$blue: #0c2a8a;
+$orange: #F2AB27;
+$primary: #FF4C60;
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "./node_modules/bootstrap/scss/reboot";
+@import "./node_modules/bootstrap/scss/type";
+@import "./node_modules/bootstrap/scss/utilities";
+@import "./node_modules/bootstrap/scss/navbar";
+@import "./node_modules/bootstrap/scss/images";
+@import "./node_modules/bootstrap/scss/containers";
+@import "./node_modules/bootstrap/scss/forms";
+@import "./node_modules/bootstrap/scss/grid";
+@import "./node_modules/bootstrap/scss/buttons";
+@import "./node_modules/bootstrap/scss/progress";
+@import "./node_modules/bootstrap/scss/helpers";
+
+// pages
+@import "mymixin";
+@import "myvariables";
+@import "components/header";
+@import "components/mobile-menu";
+@import "components/jumbotron";
+@import "components/gallery";
+@import "components/footer";
+@import "components/button";
+@import "components/svg-dev";
+@import "global";
+@import "pages/home";

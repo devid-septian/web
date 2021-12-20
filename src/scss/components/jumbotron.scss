@@ -1,0 +1,95 @@
+.jumbotron {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	background-color: $header-bg;
+	position: relative;
+	overflow: hidden;
+	flex-direction: column;
+	.hero-content {
+		width: 100%;
+		text-align: center
+	}
+	@media(max-width: 480px) {
+			height: 80vh;
+	}
+	.pict-wrap {
+		width: 150px;
+		height: 150px;
+		border-radius: 300px;
+		overflow: hidden;
+		margin: 0 auto 20px auto;
+		border: 4px solid $yellow;
+	}
+	.circle {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		background-color: $white;
+		opacity: .1;
+		z-index: 1;
+		@media(max-width: 768px) {
+	      display: none;
+	    }
+		&.md {
+			width: 80px;
+			height: 80px;
+		}
+		&.lg {
+			width: 120px;
+			height: 120px;
+		}
+		&.pos-1 {
+			top: 60%;
+			left: 30%;
+		}
+		&.pos-2 {
+			bottom: 10%;
+			left: 20%;
+		}
+		&.pos-3 {
+			top: 30%;
+			left: 10%;
+		}
+		&.pos-4 {
+			bottom: 10%;
+			right: 20%;
+		}
+		&.pos-5 {
+			top: 60%;
+			right: 30%;
+		}
+		&.pos-6 {
+			top: 25%;
+			right: 10%;
+		}
+	}
+	.hero-content {
+		position: relative;
+		z-index: 2;
+		h1 {
+			font-size: 36px;
+			color: $white;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+			line-height: 36px;
+			@media(max-width: 991px) {
+		        font-size: 24px;
+		    }
+		    @media(max-width: 480px) {
+		        font-size: 20px;
+		    }
+		}
+		p {
+			color: $white;
+			font-size: 16px;
+			margin-bottom: 24px;
+			font-weight: 400;
+			@media(max-width: 991px) {
+		        font-size: 16px;
+		    }
+		}
+	}
+}
